@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <form>
+            <h1>A01: Realizar un algoritmo que pida los coeficientes de una ecuación de 2º grado, y de las posibles soluciones reales. Si no existen reales, debe indicarlo.</h1>
+            <br />
+          <input type="text" size="15"  maxlength="30" placeholder="Valor A" id="val_a" ><br /><br />
+        <input type="text" size="15" maxlength="30" placeholder="Valor B" id="val_b">
+            
+            <input class="buton" type="button" value="SUMAR" onclick="segrado('sumar'); return false;" />
+            
+            <label class="label">El Resultado + es =  <label id="label"></label></label>
+            
+            <label class="label">El Resultado - es =  <label id="label2"></label></label>
+            <br /><br />
+        <input type="text" size="15" maxlength="30" placeholder="Valor C" id="val_c"><br /><br />
+            
+        </form>
+      <form>
+<h1>Por medio de un menú dar al usuario la opción de seleccionar círculo o circunferencia si
+selecciona círculo calcular su área. A=PI*r^2, si selecciona circunferencia calcular su longitud</h1>
+   
+
+<ul>
+  <li><a onClick="ocultar_1();" href="#home">Circulo</a></li>
+  <li><a onClick="ocultar_2();"  href="#news">Circunferencia</a></li>
+</ul>
+
+        <div id="uno" class="un">
+        Area:  <input type="text" size="15" maxlength="30" placeholder="Ingrese el Area" id="area">
+        <input type="button" value="Total" onclick="area()" />
+            <label id="label3"></label> 
+        </div>
+        <div id="dos" class="un">
+        Radio:  <input type="text" size="15" maxlength="30" placeholder="Ingrese el Radio" id="radio">
+        <input type="button" value="Total" onclick="radio()" />
+            <label id="label4"></label> 
+        </div>
+          </form>
+        
+       
+
+<form name="form">
+    <h1>A04: Pedir un número entre 0 y 9.999 y mostrarlo con las cifras al revés.</h1>
+    <input type="text" name="text" value=""> 
+<input type="button" value="Invertir" onclick="rev()"> 
+    </form>
+        
+        <form>
+        <h1>A05: Dadas las edades y alturas de 5 alumnos, mostrar la edad y la estatura media, la cantidad de alumnos mayores de 18 años, y la cantidad de alumnos que miden más de 1.75.</h1>
+            
+            Alumno 1: <input type="text" size="15"  maxlength="30" placeholder="Edad" id="e1" >
+            <input type="text" size="15"  maxlength="30" placeholder="Altura en cm" id="a1" ><br>
+            Alumno 2: <input type="text" size="15"  maxlength="30" placeholder="Edad" id="e2" >
+            <input type="text" size="15"  maxlength="30" placeholder="Altura en cm" id="a2" ><br>
+            Alumno 3: <input type="text" size="15"  maxlength="30" placeholder="Edad" id="e3" >
+            <input type="text" size="15"  maxlength="30" placeholder="Altura en cm" id="a3" ><br>
+            Alumno 4: <input type="text" size="15"  maxlength="30" placeholder="Edad" id="e4" >
+            <input type="text" size="15"  maxlength="30" placeholder="Altura en cm" id="a4" ><br>
+            Alumno 5: <input type="text" size="15"  maxlength="30" placeholder="Edad" id="e5" >
+            <input type="text" size="15"  maxlength="30" placeholder="Alturaen cm" id="a5" ><br>
+            <input type="button" value="Aceptar" onclick="me()">
+            <label id="altura"></label>
+            <label id="edad"></label>
+            <label id="e175"></label>
+            
+        </form>
+        
+        <form>
+        <h1>
+            A06: Pedir un número entre 0 y 9.999, decir si es capicúa.
+            </h1>
+            
+            <input type="text" placeholder="Introducir palabra." id="input-word" />
+  <input type="button" onclick="testCapCua(document.getElementById('input-word').value)" value="Comprobar"/>
+        </form>
+        
+        <form>
+        
+        <h1>A07: Solicitar al usuario el total de kilómetros que recorre su automóvil si con un litro se recorre 16.4 kilómetros, y desplegar cuantos litros de gasolina gastará, redondear el resultado para que no muestre decimales.</h1>
+            
+            Ingrese los Kilometros: <input type="text" size="15"  maxlength="30" placeholder="km" id="km" >
+            <input type="button" value="Ver" onclick="redondear()">
+            <label id="kms"></label>
+        </form>
+        
+        <form>
+        <h1>
+           Pedir el día, mes y año de una fecha e indicar si la fecha es correcta. Con meses de 28, 30 y 31 días. Sin años bisiestos. 
+            </h1>
+            
+            <input type="text" size="15"  maxlength="30" placeholder="dia" id="dia" >
+            <input type="text" size="15"  maxlength="30" placeholder="mes" id="mes" >
+            <input type="text" size="15"  maxlength="30" placeholder="año" id="anho" >
+            
+            <input type="button" value="Ver" onclick="fecha()">
+            
+            <label id="res" ></label>
+        </form>
+        
+        <form>
+            
+            
+        </form>
+        
+        <script type="text/javascript" src="js/funciones.js"> </script>
+    </body>
+   
+</html>

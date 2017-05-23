@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Ejercicio 13
+	</title>
+	<script >
+		function accion(){
+			const val=15;
+			var suma=0;
+			var array=[];
+			var cont=0;
+			for (var i = 0; i <5; i++) {
+			var cant=parseInt(prompt("Ingrese la cantidad de litros de la factura "+(i+1)));
+			suma=(cant*val);
+			array.push(cant);
+			if (suma>600) {
+				cont++;
+			}
+			}
+			alert("La cantidad de litros vendido de la factura 1 es: "+array[0]);
+			alert("El valor total de la factura es: "+suma+" y el numero de factura mayores a 600 E son: "+cont);
+	}
+	</script>
+</head>
+<body>
+<input type="button"  value="Inicio" id="boton" onclick="accion()" name="boton">
+</body>
+</html>
